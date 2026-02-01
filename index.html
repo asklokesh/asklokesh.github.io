@@ -18,6 +18,7 @@
         .container {
             text-align: center;
             padding: 2rem;
+            max-width: 800px;
         }
         .logo {
             width: 120px;
@@ -42,6 +43,7 @@
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
+            margin-bottom: 2rem;
         }
         .project {
             background: rgba(255,255,255,0.1);
@@ -57,6 +59,20 @@
         }
         .project-name { font-weight: 600; }
         .project-desc { font-size: 0.85rem; color: #a0aec0; }
+        .featured {
+            background: linear-gradient(135deg, rgba(124,58,237,0.3), rgba(0,212,255,0.3));
+            border: 1px solid rgba(124,58,237,0.5);
+        }
+        .badge {
+            display: inline-block;
+            background: #7c3aed;
+            color: #fff;
+            font-size: 0.65rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -65,9 +81,13 @@
         <h1>Lokesh</h1>
         <p class="tagline">Building autonomous development tools</p>
         <div class="projects">
-            <a href="https://github.com/asklokesh/loki-mode" class="project">
+            <a href="https://github.com/asklokesh/loki-mode" class="project featured">
                 <div class="project-name">Loki Mode</div>
                 <div class="project-desc">Multi-agent autonomous dev system</div>
+            </a>
+            <a href="https://marketplace.visualstudio.com/items?itemName=asklokesh.loki-mode" class="project">
+                <div class="project-name">VS Code Extension <span class="badge">NEW</span></div>
+                <div class="project-desc">Visual interface for Loki Mode</div>
             </a>
             <a href="https://github.com/asklokesh" class="project">
                 <div class="project-name">GitHub</div>
