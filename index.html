@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh - Developer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline {
+            color: #a0aec0;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .projects {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .project:hover {
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.15);
+        }
+        .project-name { font-weight: 600; }
+        .project-desc { font-size: 0.85rem; color: #a0aec0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/asklokesh/loki-mode/main/assets/publisher-icon-128.png" alt="Logo" class="logo">
+        <h1>Lokesh</h1>
+        <p class="tagline">Building autonomous development tools</p>
+        <div class="projects">
+            <a href="https://github.com/asklokesh/loki-mode" class="project">
+                <div class="project-name">Loki Mode</div>
+                <div class="project-desc">Multi-agent autonomous dev system</div>
+            </a>
+            <a href="https://github.com/asklokesh" class="project">
+                <div class="project-name">GitHub</div>
+                <div class="project-desc">View all projects</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
